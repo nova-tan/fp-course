@@ -1,0 +1,9 @@
+bindOptional :: (a -> Optional b) -> Optional a -> Optional b
+flatMap      :: (a -> List     b) -> List     a -> List b
+
+"things that have fmap (<$>)" - functor
+"things that have pure/(<*>)" - applicative
+
+"things that have bind" - monad
+(=<<) :: (a -> f b) -> f a -> f b
+(>>=) :: f a -> (a -> f b) -> f b
